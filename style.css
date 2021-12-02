@@ -1,0 +1,663 @@
+/* *********************************************************************************** */
+                                /* SOMMAIRE */
+
+                        /* 1. Police Ecriture */
+                        /* 2. Couleur Ecriture */
+                        /* 3. Body
+                        /* 4. Navigation */
+                        /* 5. Header */
+                        /* 6. Main */
+                        /* 7. Footer */
+                        /* 8. Image */
+                        /* 9. Media Queries */
+
+/* ********************************************************************************** */
+/* 1.Police Ecriture */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* Fin Police Ecriture */
+
+/* 2.Couleur */
+:root{
+   --color1: #91B7D9;
+   --color2: #4C5D73;
+   --color3: #ffffff;
+   --color4: #C4C4C4;
+   --color5: #e59863;
+}
+/* Fin Couleur */
+
+/* 3.BODY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient( to top, var(--color5) 0%, transparent 10%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+}
+
+a:hover {
+    background-size: 100% 180%;
+}
+
+li {
+    list-style-type: none;
+}
+/* FIN BODY */
+
+/*4. NAVIGATION */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lien-entete-img1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 3.6rem;
+    font-family: "popins";
+    color: var(--color1);
+    font-weight: 400;
+}
+
+.lien-entete a {
+    font-family: "Popins";
+    color: var(--color2);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.lien-entete-img2 {
+    display: flex;
+    align-items: center;
+}
+/* FIN NAVIGATION */
+
+/* 5. HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/img/img4.jpg);
+    background-size: cover;
+    height: 60rem;
+}
+
+.titre {
+    color: var(--color3);
+    font-weight: 400;
+    font-size: 7rem;
+    font-family: "Grand hotel";
+    margin-top: 47rem;
+    letter-spacing: 0.7rem;
+}
+/* 2. FIN HEADER */
+
+/* 6. MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sous-titres {
+     color: var(--color2);
+     font-weight: 400;
+     margin-top: 2rem;
+     font-size: 3.6rem;
+     font-family: "Poppins";
+}
+
+.ligne {
+    height: 0.2rem;
+    width: 28rem;
+    margin-top: 1rem;
+    background-color: var(--color1);
+}
+
+/* SECTION */
+/* Section 1 */
+/* Partie Gauche */
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 122rem;
+}
+
+.encadre1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30rem;
+    height: 9rem;
+    background: rgba(242, 202, 167, 0.75);
+}
+
+.details1-img {
+    color: var(--color2);
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 30rem;
+    margin-left: 3rem;
+}
+
+.details1-img :nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-bottom: 0.5rem;
+}
+
+.details2-img {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-top: 30rem;
+    margin-right: 3rem;
+    color: var(--color2);
+    font-size: 1.8rem; 
+    text-align: right;
+}
+
+.details2-img :nth-child(2) {
+    font-family: "Popins";
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/* Fin Partie Gauche */
+
+/* Partie Droite */
+.encadre2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30rem;
+    height: 9rem;
+    background: rgba(99, 166, 141, 0.75);
+}
+
+.details3-img {
+    font-family: "Popins";
+    color: var(--color3);
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-top: 30rem;
+    margin-left: 3rem;
+}
+
+.details3-img :nth-child(2) {
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.details4-img {
+    font-family: "Roboto";
+    margin-top: 30rem;
+    margin-right: 3rem;
+    color: var(--color3);
+    font-size: 1.4rem; 
+    text-align: right;
+}
+
+.details4-img :nth-child(2) {
+    font-family: "Popins";
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/* Fin Partie Droite */
+/* Fin Section 1 */
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 122rem;
+}
+.encadre2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30rem;
+    height: 9rem;
+    background: rgba(99, 166, 141, 0.75);
+}
+
+/* Partie Gauche  */
+.encadre3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.6rem;
+    align-items: center;
+    margin-top: 30rem;
+    height: 9rem;
+    font-weight: 700;
+    font-family: "Popins";
+    background: rgba(145, 183, 217, 0.75);
+} 
+
+.details5-img {
+    color: var(--color3);
+    margin-left: 2rem;
+}
+/* Fin Partie Gauche  */
+
+ /* Partie Milieu */
+ .encadre4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.6rem;
+    align-items: center;
+    margin-top: 30rem;
+    height: 9rem;
+    font-weight: 700;
+    font-family: "Popins";
+    background: rgba(242, 202, 167, 0.75);
+} 
+
+ .details6-img {
+     color: var(--color2);
+     margin-left: 2rem;
+ }
+ /* Fin Partie Milieu */
+
+ /* Partie Droite */
+ .encadre5 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.6rem;
+    align-items: center;
+    margin-top: 30rem;
+    height: 9rem;
+    font-weight: 700;
+    font-family: "Popins";
+    background: rgba(145, 183, 217, 0.75);
+} 
+
+ .details7-img {
+     color: var(--color3);
+     margin-left: 2rem;
+ }
+ /* Fin Partie Droite */
+/* Fin Section 2 */
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    width: 122rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.section3 p:hover {
+    transform: scale(1.2);
+    color: var(--color2);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.hexagone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing : border-box;
+    position : relative;
+    width : 22rem;
+    height : 15rem;
+    background-color : var(--color1);
+    margin : 3.5rem 0;
+}
+
+.hexagone:before,
+.hexagone:after {
+    content : "";
+    box-sizing : border-box;
+    position : absolute;
+    width : 0;
+    border-left : 11rem solid transparent;
+    border-right : 11rem solid transparent;
+}
+
+.hexagone:after {
+    top : 100%;
+    width : 0;
+    border-top : 5rem solid var(--color1);
+}
+
+.hexagone:before {
+    bottom : 100%;
+    border-bottom : 5rem solid var(--color1);
+}
+
+.hexagone p {
+    text-align: center;
+    width: 17rem;
+    color: var(--color3);
+    font-family: "Popins";
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.8rem;
+}
+/* Fin Section 3 */
+
+/* Section 4 */
+.section4 {
+    background-image: url(./images/pictos/wave.svg);
+    background-size: cover;
+    width: 100%;
+    height: 14rem;
+    background-repeat: no-repeat;
+}
+
+/* Formulaire */
+.container-formulaire {
+    margin-top: 7rem;
+    background-color: #4c5d73;
+}
+
+.div-sous-titres3 {
+    display: flex;
+    justify-content: center;
+}
+
+.sous-titres3 {
+    font-family: "Popins";
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.ligne2 {
+    width: 28rem;
+    margin: 0.5rem auto;
+    color: white;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+form label{
+    font-family: "Popins";
+    font-weight: 400;
+    font-size: 1.8rem;
+    display: block;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+form label {
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient( to top, var(--color5) 0%, transparent 10%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+}
+
+form label:hover {
+    background-size: 22% 180%;
+}
+
+form input {
+    width: 26.5rem;
+    height: 4.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.label-textarea {
+    font-family: "Popins";
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-left: 5rem;
+    color: white;
+}
+
+.label-textarea {
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient( to top, var(--color5) 0%, transparent 10%) no-repeat left bottom / 0rem 100%;
+    transition: background-size .5s;
+}
+
+.label-textarea:hover {
+    background-size: 100% 180%;
+}
+
+textarea {
+   margin-top: 0.5rem;
+   margin-left: 5rem;
+   height: 21.8rem;
+   width: 47rem;
+   margin-bottom: -0.5rem;
+   font-weight: bold;
+   font-size: 2rem;
+}
+/* Fin Formulaire */
+
+.ligne3 {
+    margin: 3rem auto;
+    width: 130rem;
+    height: 0.2rem; 
+    background-color: white;
+}
+/* Fin Section 4 */
+
+/* Section 5 */
+.section5 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.section5 li {
+    color: var(--color3);
+    font-family: "Popins";
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.section5 li:hover {
+    color: var(--color5);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+/* Fin Section 5 */
+/* Fin SECTION */
+/* 3. FIN MAIN */
+
+/* 7. FOOTER */
+footer {
+    margin-top: 4rem;
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Popins";
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--color4);
+    margin-bottom: 1rem;
+}
+
+footer h2:nth-child(2) {
+    padding-bottom: 2rem;
+}
+/* 4. FIN FOOTER */
+
+/* 8. Image */
+.img1 {
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2rem;
+    margin-left: -2rem;
+}
+
+.img2 {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.img3 {
+    height: 39rem;
+    width: 60rem;
+    margin-right: 2rem;
+    background-image: url(./images/img/img3.jpg);
+}
+
+.img4 {
+    height: 39rem;
+    width: 60rem;
+    background-image: url(./images/img/img1.jpg);
+}
+
+.img5 {
+    height: 39rem;
+    width: 39.6rem;
+    margin-right: 2rem;
+    background-image: url(./images/img/img5.jpg);
+}
+
+.img6 {
+    height: 39rem;
+    width: 39.6rem;
+    margin-right: 2rem;
+    background-image: url(./images/img/img2.jpg);
+}
+
+.img7 {
+    height: 39rem;
+    width: 39.6rem;
+    background-image: url(./images/img/img6.jpg);
+}
+
+.img8 {
+    background-image: url(./images/pictos/like.svg);
+    background-color: #91B7D9;
+    background-size: cover;
+    height: 7rem;
+    width: 7rem;
+}
+
+.img9 {
+    background-image: url(./images/pictos/medal.svg);
+    background-color: #91B7D9;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+}
+
+.img10 {
+    background-image: url(./images/pictos/support.svg);
+    background-color: #91B7D9;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+}
+
+.img11 {
+    background-image: url(./images/pictos/gps.svg);
+    background-color: #91B7D9;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+}
+/* 8. Fin Image */
+
+/* 9. Media Queries */
+@media (max-width: 1250px) {
+
+    html {
+        font-size: 50%;
+    }   
+}
+
+@media (max-width: 1000px) {
+
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    html {
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    html {
+        font-size: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 15%;
+    }
+}
+
+@media (max-width: 300px) {
+
+    html {
+        font-size: 10%;
+    }
+}
+/* 9.Fin Media Queries */
+
